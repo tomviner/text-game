@@ -44,6 +44,10 @@ class Reception(items.Room):
 class PresentationRoom(items.Room):
     pass
 
-game = game.createFromScript(open('script.xml'), locals())
-game.actor = Player.inst
-interface.runGame(game)
+if __name__ == '__main__':
+    try:
+        game = game.createFromScript(open('script.xml'), locals())
+        game.actor = Player.inst
+        interface.runGame(game)
+    except (KeyboardInterrupt, EOFError):
+        print("\nGoodbye.")
