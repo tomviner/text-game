@@ -1,14 +1,2 @@
 <Game xmlns:props="pyf.props">
-        <Room name="Reception, room"
-                ldesc="You are in reception. There are two ladies at a desk. There is a large pile of mugs and T-shirts.">
-
-                <Player name="yourself">
-                </Player>
-                <Mug name="mug, cup" ldesc="That is not your mug, the name says 'Nicholas Tollervey'.">
-                  <props:Mobile />
-                </Mug>
-                <Shirt name="shirt" ldesc="It has a picture of a worm on it.">
-                  <props:Mobile />
-                </Shirt>
-        </Room>
 </Game>
