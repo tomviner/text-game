@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Game xmlns:props="pyf.props">
+  <attr>
+    <name>PyConUK 2012</name>
+  </attr>
 
         <Dojo name="Dojo"
                 ldesc="You see lots of coders. Some are giving a
