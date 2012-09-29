@@ -4,17 +4,20 @@
 from pyf import items, game, interface, props
 
 class Game(game.Game):
-        pass
+    pass
 
 class Room(items.Room):
-        pass
+    pass
         
 class Player(items.Actor):
-        pass
+    pass
         
 class Furnace(items.Item):
-        pass
-        
+    pass
+
+class Pythonist(items.Actor):
+    pass
+
 game = game.createFromScript(open('script.xml'), locals())
 game.actor = Player.inst
 interface.runGame(game)
