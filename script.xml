@@ -13,8 +13,8 @@
                 </Pythonist>
 
         </Room>
-        <Room name="Restaurant, room"
-                ldesc="You've landed in a large room. You notice some delicious smells in this area!">
+        <Room name="Restaurant"
+                ldesc="You've landed in a large room. You notice some delicious smells in this area">
 
                 <Player name="yourself" />
 
@@ -22,6 +22,9 @@
                                 ldesc="It's a lovely tasty burger.">
                                 <props:Mobile />
                 </Burger>
+                <exits>
+                    <east><Main /></east>
+                </exits>
         </Room>
         <Room name="Main room"
                 ldesc="You're in the main conference room. But there's
