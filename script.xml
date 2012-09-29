@@ -1,0 +1,10 @@
+<Game>
+        <Room name="Furnace room, room"
+                ldesc="You're stuck in a tiny furnace room. Right now the heat is 
+                        unbearable and it seems to be only rising.">
+
+                <Player name="yourself" />
+
+                <Furnace name="furnace, boiler" />
+        </Room>
+</Game>
