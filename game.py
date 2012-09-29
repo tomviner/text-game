@@ -24,6 +24,13 @@ class Pythonist(items.Actor):
 class Seat(items.Item):
     pass
 
+class Mug(items.Item):
+    mobile = True
+    response = "That is not your mug, the name says 'Nicholas Tollervey'."
+
+class Shirt(items.Item):
+    pass
+
 game = game.createFromScript(open('script.xml'), locals())
 game.actor = Player.inst
 interface.runGame(game)
