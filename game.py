@@ -21,6 +21,9 @@ class Burger(items.Item):
 class Pythonist(items.Actor):
     pass
 
+class Seat(items.Item):
+    pass
+
 game = game.createFromScript(open('script.xml'), locals())
 game.actor = Player.inst
 interface.runGame(game)

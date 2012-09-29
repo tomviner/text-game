@@ -23,4 +23,15 @@
                                 <props:Mobile />
                 </Burger>
         </Room>
+        <Room name="Main room"
+                ldesc="You're in the main conference room. But there's
+                       no where to sit!">
+
+                <Player name="yourself" />
+
+                <Seat adjective="full, cosy"
+                      ldesc="A chair">
+                  <props:Mobile />
+                </Seat>
+        </Room>
 </Game>
