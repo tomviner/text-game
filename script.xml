@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Game xmlns:props="pyf.props">
+
         <Room name="Dojo"
                 ldesc="You see lots of coders. Some are giving a
                        presentation. You don't know what's going on,
@@ -7,13 +8,8 @@
 
                 <Player name="yourself" />
 
-                <Pythonist name="A ramdon guy hacking away"
-                           adjective="beardy"
-                           ldesc="He's coding.">
-                </Pythonist>
-
         </Room>
-        <Room name="Restaurant, room"
+        <Room name="Restaurant"
                 ldesc="You've landed in a large room. You notice some delicious smells in this area!">
 
                 <Player name="yourself" />
@@ -23,7 +19,8 @@
                                 <props:Mobile />
                 </Burger>
         </Room>
-        <Room name="Main room"
+<!--
+        <Room name="Main"
                 ldesc="You're in the main conference room. But there's
                        no where to sit!">
 
@@ -34,8 +31,9 @@
                   <props:Mobile />
                 </Seat>
         </Room>
+-->
 
-        <Room name="Reception, room"
+        <Room name="Reception"
                 ldesc="You are in reception. There are two ladies at a desk. There is a large pile of mugs and T-shirts.">
 
                 <Player name="yourself">
@@ -46,6 +44,8 @@
                 <Shirt name="shirt" ldesc="It has a picture of a worm on it.">
                   <props:Mobile />
                 </Shirt>
+
         </Room>
+
 
 </Game>

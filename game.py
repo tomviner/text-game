@@ -25,8 +25,9 @@ class Seat(items.Item):
     pass
 
 class Mug(items.Item):
-    mobile = True
-    response = "That is not your mug, the name says 'Nicholas Tollervey'."
+#    mobile = True
+#    response = "That is not your mug, the name says 'Nicholas Tollervey'."
+    pass
 
 class Shirt(items.Item):
     pass
