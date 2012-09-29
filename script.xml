@@ -1,10 +1,37 @@
-<Game>
-        <Room name="Furnace room, room"
-                ldesc="You're stuck in a tiny furnace room. Right now the heat is 
-                        unbearable and it seems to be only rising.">
+<?xml version="1.0" encoding="UTF-8" ?>
+<Game xmlns:props="pyf.props">
+        <Room name="Dojo"
+                ldesc="You see lots of coders. Some are giving a
+                       presentation. You don't know what's going on,
+                       and feel lost.">
 
                 <Player name="yourself" />
 
-                <Furnace name="furnace, boiler" />
+                <Pythonist name="A ramdon guy hacking away"
+                           adjective="beardy"
+                           ldesc="He's coding.">
+                </Pythonist>
+
+        </Room>
+        <Room name="Restaurant, room"
+                ldesc="You've landed in a large room. You notice some delicious smells in this area!">
+
+                <Player name="yourself" />
+
+                <Burger name="burger" adjective="tasty, round"
+                                ldesc="It's a lovely tasty burger.">
+                                <props:Mobile />
+                </Burger>
+        </Room>
+        <Room name="Main room"
+                ldesc="You're in the main conference room. But there's
+                       no where to sit!">
+
+                <Player name="yourself" />
+
+                <Seat adjective="full, cosy"
+                      ldesc="A chair">
+                  <props:Mobile />
+                </Seat>
         </Room>
 </Game>
