@@ -16,7 +16,7 @@ class Furnace(items.Item):
     pass
 
 class Burger(items.Item):
-    pass
+    response = "This was not as edible as it looked!"
 
 class Pythonist(items.Actor):
     pass
