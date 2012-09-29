@@ -8,11 +8,14 @@ class Game(game.Game):
 
 class Room(items.Room):
     pass
-        
+
 class Player(items.Actor):
     pass
-        
+
 class Furnace(items.Item):
+    pass
+
+class Burger(items.Item):
     pass
 
 class Pythonist(items.Actor):

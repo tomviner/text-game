@@ -17,9 +17,9 @@
 
                 <Player name="yourself" />
 
-                <Screwdriver name="burger" adjective="tasty, round"
+                <Burger name="burger" adjective="tasty, round"
                                 ldesc="It's a lovely tasty burger.">
                                 <props:Mobile />
-                </Screwdriver>
+                </Burger>
         </Room>
 </Game>
