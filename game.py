@@ -16,7 +16,7 @@ class Furnace(items.Item):
     pass
 
 class Burger(items.Item):
-    pass
+    response = "This was not as edible as it looked!"
 
 class Pythonist(items.Actor):
     pass
@@ -30,6 +30,18 @@ class Mug(items.Item):
     pass
 
 class Shirt(items.Item):
+    pass
+
+class Dojo(items.Room):
+    pass
+
+class Restaurant(items.Room):
+    pass
+
+class Reception(items.Room):
+    pass
+
+class PresentationRoom(items.Room):
     pass
 
 game = game.createFromScript(open('script.xml'), locals())

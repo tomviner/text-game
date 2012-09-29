@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Game xmlns:props="pyf.props">
 
-        <Room name="Dojo"
+        <Dojo name="Dojo"
                 ldesc="You see lots of coders. Some are giving a
                        presentation. You don't know what's going on,
                        and feel lost.">
 
                 <Player name="yourself" />
 
-        </Room>
-        <Room name="Restaurant"
+                <exits>
+                  <south><Reception /></south>
+                </exits>
+
+        </Dojo>
+
+        <Restaurant name="Restaurant"
                 ldesc="You've landed in a large room. You notice some delicious smells in this area!">
 
                 <Player name="yourself" />
@@ -18,22 +23,33 @@
                                 ldesc="It's a lovely tasty burger.">
                                 <props:Mobile />
                 </Burger>
-        </Room>
-<!--
-        <Room name="Main"
+
+                <exits>
+                  <north><Reception /></north>
+                </exits>
+
+        </Restaurant>
+
+        <PresentationRoom name="Main conference room"
                 ldesc="You're in the main conference room. But there's
                        no where to sit!">
 
                 <Player name="yourself" />
-
+<!--
                 <Seat adjective="full, cosy"
                       ldesc="A chair">
                   <props:Mobile />
                 </Seat>
-        </Room>
 -->
+                <exits>
+                  <west><Reception /></west>
+                </exits>
 
-        <Room name="Reception"
+
+        </PresentationRoom>
+
+
+        <Reception name="Reception"
                 ldesc="You are in reception. There are two ladies at a desk. There is a large pile of mugs and T-shirts.">
 
                 <Player name="yourself">
@@ -43,9 +59,16 @@
                 </Mug>
                 <Shirt name="shirt" ldesc="It has a picture of a worm on it.">
                   <props:Mobile />
+                  <props:Wearable />
                 </Shirt>
 
-        </Room>
+                <exits>
+                  <north><Dojo /></north>
+                  <south><Restaurant /></south>
+                  <east><PresentationRoom /></east>
+                </exits>
+
+        </Reception>
 
 
 </Game>
