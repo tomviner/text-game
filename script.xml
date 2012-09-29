@@ -12,5 +12,14 @@
                 </Pythonist>
 
         </Room>
+        <Room name="Restaurant, room"
+                ldesc="You've landed in a large room. You notice some delicious smells in this area!">
 
+                <Player name="yourself" />
+
+                <Screwdriver name="burger" adjective="tasty, round"
+                                ldesc="It's a lovely tasty burger.">
+                                <props:Mobile />
+                </Screwdriver>
+        </Room>
 </Game>
